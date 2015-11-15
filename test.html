@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--[if lt IE 9]>
+	<script  type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"> </script>
+	<link rel="stylesheet" type="text/css" href="css/ie.css">
+<![endif]-->
+</head>
+<body>
+<div id="wapper">
+	<div id="firstmain">
+		<header id="header">
+			<h1><a href="#" title="Produce Logo"><img src="images/logo.png" alt="Produce Logo"></a></h1>
+			<nav id="gnb">
+				<ul class="menubar">
+					<li><a href="#" title="Home">Home</a></li>
+					<li><a href="#" title="About the Product">About the Product</a></li>
+					<li><a href="#" title="Benefits">Benefits</a></li>
+					<li><a href="#" title="Testimonials">Testimonials</a></li>
+					<li><a href="#" title="Buy">Buy</a></li>
+					<li><a href="#" title="Contact">Contact</a></li>
+					<li><a href="#" title="Blog">Blog</a></li>
+				</ul>
+			</nav><!--gnb End-->
+		</header><!--header End-->
+		<section id="firstvisual">
+			<div id="visualup">
+				<h2>visual</h2>
+				<p class="visualup">
+					<img src="images/visual1.png" alt="광고상품1">
+				</p>
+			</div>
+			<div id="visualtitle">
+				<h3>INCREASE YOUR <span>ENGERGY LEVEL WITH</span> <span class="titlestyle">GARCINIA CAMBOGIA</span></h3>
+			</div>
+			<div id="loginform">
+				<div id="login">
+					<h2>login</h2>
+					<form>
+						<fieldset>
+							<legend>TRY IT TODAY</legend>
+								<p>
+									<label for="userid"></label>
+									<input type="text" id="userid" name="userid" maxlength="15" placeholder="Your Name*">
+								</p>
+								<p>
+									<label for="youremail"></label>
+									<input type="text" id="youremail" name="youremail" maxlength="15" placeholder="Your Email*">
+								</p>
+								<div class="orderbutton">
+									<input type="button" value="ORDER NOW" onclick="checkorder();">
+								</div>
+						</fieldset>
+					</form>
+				</div>
+				<script>
+					function checkorder(){
+						var userid = document.getElementById("userid");
+						var youremail = document.getElementById("youremail");
+						if( userid.value==""){
+							alert("아이디를 입력하세요.");
+							userid.focus();
+							return false;
+						}else if( youremail.value=="" ){
+							alert("이메일을 입력하세요.");
+							youremail.focus();
+							return false;
+						};
+					};
+				</script>
+			</div>
+		</section><!--visual End-->
+	</div><!--first End-->
+	<section id="secondmain">
+		<h2>ABOUT GARCINIA CAMBOGIA</h2>
+			<h3>Reduce food intake and promote <span>weight loss fast</span>!</h3>
+				<p>Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic'</p>
+				<p>environment by working together and in synergy. Some of these ingredients also aid</p>
+				<p>in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning</p>
+				<p>from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals</p>
+			<h3>Other <span>Related</span> Products</h3>
+				<ul class="products">
+					<li>
+						<a href="#" title="Other Related Products1">
+							<img src="images/content1.png" alt="Other Related Products1">
+						</a>
+					</li>
+					<li class="secondlist">
+						<a href="#" title="Other Related Products2">
+							<img src="images/content2.png" alt="Other Related Products2">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Other Related Products3">
+							<img src="images/content3.png" alt="Other Related Products3">
+						</a>
+					</li>
+				</ul>
+				<script>
+					$(function(){
+						$(".products li a img").bind("mouseover",function(){
+							$(this).css("opacity","0.4");
+						}).bind("mouseout",function(){
+							$(this).css("opacity","1");
+						});
+					});
+				</script>
+	</section><!--secondmain End-->
+	<section id="thirdmain">
+		<article id="thirdcontent1">
+			<h2><span>WHAT ARE</span> THE BENEFITS</h2>
+				<p>Obesity is an imbalance between fat intake and energy expenditure.</p>
+				<p>Now day obesity is a problem of health and mind in many people.</p>
+		</article>
+		<article id="thirdcontent2">
+			<h3>content1</h3>
+				<p>The rush hour working lifestyle make many people take junk food and fast food more  than nutritionists.</p>
+				<p>The important factor is Generic, it is found that one obese patient has a 40% chance of obesity and both obese patients have 80% chance of obesity. The chronic diseaes that are developed from obesity are diabetes, high blood pressure, stroke, heart attack, cancer, gout and sleep apnea. So control the weight is the best way to void health problem.</p>
+		</article>
+		<article id="thirdcontent3">
+			<h3>content2</h3>
+				<p>Control the body weight helps you against the chronic diseases and make good looking. There are many ways to reduce and control the weight. Using weight control products is not the best way, especially use potential dangerous diet products without consult from the doctors or the pharmacists. Balance the energy expenditure and fat intake is an important point. If you eat more you have to exercise more. Other ways are break bad habits such as alcohol intake, watching T.V. during eating, or ignore vegetables. You have to realize how much the fat in each menu and should the low cholesterol with high nutrition</p>
+		</article>
+		<article id="thirdcontent4">
+			<h3>Here are the Beneftis You can get from <span>Garcinia Combogia</span></h3>
+				<ul>
+					<li><span><img src="images/check.png" alt="check"></span>Increases energy levels</li>
+					<li><span><img src="images/check.png" alt="check"></span>Powerful insulin potentiator</li>
+					<li><span><img src="images/check.png" alt="check"></span>Balances blood sugar levels</li>
+					<li><span><img src="images/check.png" alt="check"></span>Transports blood sugar into the cells</li>
+					<li><span><img src="images/check.png" alt="check"></span>Aids in controlling carbohydrate cravings</li>
+				</ul>
+				<ul>
+					<li><span><img src="images/check.png" alt="check"></span>Raises the body's metabolic rate</li>
+					<li><span><img src="images/check.png" alt="check"></span>A highly effective calorie and fat burner</li>
+					<li><span><img src="images/check.png" alt="check"></span>Helps to burn fat</li>
+					<li><span><img src="images/check.png" alt="check"></span>Does not affect the central nervous system</li>
+					<li><span><img src="images/check.png" alt="check"></span>Increases energy levels</li>
+				</ul>
+		</article>
+	</section><!--thirdmain End-->
+	<section id="fourthmain">
+		<article id="fourthcontent1">
+		<h2><span>HOW TO USE</span> THIS PRODUCT</h2>
+			<p>Obesity is an imbalance between fat intake and energy expenditure.</br>
+			Now day obesity is a problem of health and mind in many people.</p>
+		</article>
+		<article id="fourthcontent2">
+			<h3>Reduce food intake and promote <span>weight loss fast</span>!</h3>
+				<p>Effective thermogenic supplements are those that contain key ingredients that create a fat burning 'thermogenic'</br>environment by working together and in synergy. Some of these ingredients also aid</br>in reducing appetite and spiking an increase in short-term energy. Dosage of Garcinia cambogia, beginning</br>from 750 mg to 1,500 mg, takes 2-3 times in individual dose before meals.</p>
+				<ul class="fourthlist">
+					<li>
+						<span>1</span>
+						<p>The active ingredient in Garcinia Cambogia is Hybroxyciric acid(HCA).</br>
+						It works as inhibit fat and cholesterol accumulation by slowing down</br> the enzyme.</p>
+					</li>
+					<li>
+						<span>2</span>
+						<p>The active ingredient in Garcinia Cambogia is Hybroxyciric acid(HCA).</br>
+						It works as inhibit fat and cholesterol accumulation by slowing down</br> the enzyme.</p>
+					</li>
+					<li>
+						<span>3</span>
+						<p>The active ingredient in Garcinia Cambogia is Hybroxyciric acid(HCA).</br>
+						It works as inhibit fat and cholesterol accumulation by slowing down</br> the enzyme.</p>
+					</li>
+				</ul>
+		</article>
+	</section><!--forthmain End-->
+	<section id="fifthmain">
+		<article id="fifthtitle">
+			<h2>IMAGE YOUR BODY SO HEALTHY!</h2>
+				<p><span class="TTP">Try This Product</span><span>MONEY BACK GAURANTEE</span></p>
+		</article>
+		<article id="people">
+			<h2>fifthmain content1</h2>
+				<div class="slidingwindow">
+					<ul class="peopleroom">
+						<li class="room1">
+							<span class="people"><img src="images/hum1.png" alt="people1"></span>
+							<p>"Garcinia cambogia is one of the main</br> components in one of the best-selling</br> supplemental weight loss products,</br> Hydroxycut., and researchers have</br> concluded that "the evidence for G.</br>cambogia id not compelling."
+							<span class="peoplename">Jannette Doe | Abc Company</span></p>
+						</li>
+						<li class="room2">
+							<span class="people"><img src="images/hum2.png" alt="people2"></span>
+							<p>"Garcinia cambogia is one of the main</br> components in one of the best-selling</br> supplemental weight loss products,</br> Hydroxycut., and researchers have</br> concluded that "the evidence for G.</br>cambogia id not compelling."
+							<span class="peoplename">John Doe | Abc Company</span></p>
+						</li>
+					</ul>
+				</div>
+		</article>
+	</section><!--fifthmain End-->
+	<section id="sixthmain">
+		<article id="sixthmaintitle">
+			<h2>Increase Your Energy Level width <span>Garcinia Cambogia</span></h2>
+				<p>It works as inhibit fat and cholesterol accumulation by</br> slowing down the enzyme.	Get The Most Effective</br> Fat Burning Supplement Now!</p>	
+		</article>
+		<article class="sixthvisual">
+			<h3>visual</h3>
+				<p>
+					<img src="images/visual3_1.png" alt="광고상품">
+				</p>
+				<p class="sixthprice">
+					<!--가격 이미지-->
+				</p>
+		</article>
+		<article class="sixthlist">
+			<h3>list</h3>
+				<ul class="psip">
+					<li><span></span>Promotes weight loss</li>
+					<li><span></span>Suppresses appetite</li>
+					<li><span></span>Increases fat oxidation</li>
+					<li><span></span>Promotes glycogen synthesis</li>
+				</ul>
+				<p class="TINbutton">
+					<a>Try It Now</a>
+				</p>
+		</article>
+	</section><!--sixthmain End-->
+	<section id="lastmain">
+		<article id="contactus">
+			<h3>CONTACT US</h3>
+				<form>
+					<fieldset>
+						<legend>CONTACT US</legend>
+							<p>
+								<label for="fuserid"></label>
+								<input type="text" id="fuserid" name="fuserid" maxlength="15" placeholder="Your Name*">
+							</p>
+							<p>
+								<label for="fyouremail"></label>
+								<input type="text" id="fyouremail" name="fyouremail" maxlength="15" placeholder="Your Email*">
+							</p>
+							<p>
+								<label for="subject"></label>
+								<input type="text" id="subject" name="subject" maxlength="15" placeholder="Subject*">
+							</p>
+							<p class="message">
+								<label for="message"></label>
+								<input type="text" id="message" name="message" maxlength="15" placeholder="Message*">
+							</p>
+							<div class="messagebutton">
+								<input type="button" value="SEND MESSAGE" onclick="checksend();">
+							</div>
+							<script>
+								function checksend(){
+									var fuserid = document.getElementById("fuserid");
+									var fyouremail = document.getElementById("fyouremail");
+									var subject = document.getElementById("subject");
+									var message = document.getElementById("message");
+									if( fuserid.value==""){
+										alert("아이디를 입력하세요.");
+										fuserid.focus();
+										return false;
+									}else if( fyouremail.value=="" ){
+										alert("이메일을 입력하세요.");
+										fyouremail.focus();
+										return false;
+									}else if( subject.value=="" ){
+										alert("제목을 입력하세요.");
+										subject.focus();
+										return false;
+									}else if( message.value=="" ){
+										alert("내용을 입력하세요.");
+										message.focus();
+										return false;
+									};
+								};
+							</script>
+					</fieldset>
+				</form>
+		</article>
+		<article id="peopleemail">
+			<h3>people email</h3>
+				<ul>
+					<li>
+						<span>San Isidro, Lopez Jaena St.</span>
+						<span>Jaro Iloilo City, Philippines 5000</span>
+						<span>Tell : 0927-338-2289</span>
+						<span>Email : jennpereira13(at)gamil.com</span>
+					</li>
+					<li>
+						<span>San Isidro, Lopez Jaena St.</span>
+						<span>Jaro Iloilo City, Philippines 5000</span>
+						<span>Tell : 0927-338-2289</span>
+						<span>Email : jennpereira13(at)gamil.com</span>
+					</li>
+				</ul>
+		</article>
+		<article id="cardlist">
+			<h4>Secured Payment Trough:</h4>
+				<ul>
+					<li>
+						<a href="#" title="paypal">
+							<img src="images/paypal.png" alt="PayPal">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="mastercard">
+							<img src="images/mastercard.png" alt="Mastercard">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Google">
+							<img src="images/google.png" alt="Google">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="maestro">
+							<img src="images/maestro.png" alt="maestro">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="ebay">
+							<img src="images/ebay.png" alt="ebay">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="discover">
+							<img src="images/discover.png" alt="discover">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="cirrus">
+							<img src="images/cirrus.png" alt="cirrus">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="2checkout">
+							<img src="images/2checkout.png" alt="2checkout">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="visa-electron">
+							<img src="images/visa-electron.png" alt="visa-electron">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="direct-debit">
+							<img src="images/direct-debit.png" alt="direct-debit">
+						</a>
+					</li>
+				</ul>
+		</article>
+		<article id="lastcontent">
+			<h4>Disclaimer : </h4>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</br> labore et dolor magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</br> laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</br> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat copidatat</br> non proident, sunt in culpa qui officia desrunt mollit anim id set laborum."</p>
+				<p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut</br> labore et dolor magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</br> laboris nisi aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</br> voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat copidatat</br> non proident, sunt in culpa qui officia desrunt mollit anim id set laborum."</p>
+	</section><!--lastmain End-->
+	<footer id="footer">
+		<div class="footerlogo">
+			<h2><img src="images/logo.png" alt="Product Logo"></h2>
+				<p>Copyright &copy; 009-2014 JLP MEDIA.</p>
+		</div>
+		<div class="messinger">
+			<h4>messinger</h4>
+				<ul>
+					<li>
+						<a href="#" title="facebook">
+							<img src="images/facebook.png" alt="facebook">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Pinterest">
+							<img src="images/Pinterest.png" alt="Pinterest">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="linkedin">
+							<img src="images/linkedin.png" alt="linkedin">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="google+-">
+							<img src="images/google+-.png" alt="google+-">
+						</a>
+					</li>
+					<li>
+						<a href="#" title="twitter">
+							<img src="images/bird.png" alt="twitter">
+						</a>
+					</li>
+				</ul>
+		</div>
+	</footer><!--footer End-->
+</div><!--wapper End-->
+</body>
+</html>

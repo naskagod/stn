@@ -1,0 +1,7 @@
+/**reset**/
+*{ margin:0; padding:0; }
+li { list-style-type:none; }
+img { border:0 none; }
+a { text-decoration:none; }
+fieldset { border:0 none; }
+header, section, article, aside, footer, nav {display:block;}
